@@ -35,23 +35,7 @@ class PlaySoundsViewController: UIViewController {
         
         setupAudio()
         
-        snailButton.contentMode = .center
-        snailButton.imageView?.contentMode = .scaleAspectFit
-        
-        chipmunkButton.contentMode = .center
-        chipmunkButton.imageView?.contentMode = .scaleAspectFit
-        
-        rabbitButton.contentMode = .center
-        rabbitButton.imageView?.contentMode = .scaleAspectFit
-        
-        vaderButton.contentMode = .center
-        vaderButton.imageView?.contentMode = .scaleAspectFit
-        
-        echoButton.contentMode = .center
-        echoButton.imageView?.contentMode = .scaleAspectFit
-        
-        reverbButton.contentMode = .center
-        reverbButton.imageView?.contentMode = .scaleAspectFit
+        configureButtons([snailButton, chipmunkButton, rabbitButton, vaderButton, echoButton, reverbButton])
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,5 +63,12 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
         stopAudio()
+    }
+    
+    func configureButtons(_ buttons: [UIButton]) {
+        for button in buttons {
+            button.contentMode = .center
+            button.imageView?.contentMode = .scaleAspectFit
+        }
     }
 }

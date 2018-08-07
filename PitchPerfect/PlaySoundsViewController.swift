@@ -33,6 +33,8 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupAudio()
+        
         snailButton.contentMode = .center
         snailButton.imageView?.contentMode = .scaleAspectFit
         

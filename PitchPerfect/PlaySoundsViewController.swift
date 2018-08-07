@@ -67,6 +67,8 @@ class PlaySoundsViewController: UIViewController {
     
     func configureButtons(_ buttons: [UIButton]) {
         for button in buttons {
+            // Center/scale buttons based on solution found at
+            //https://stackoverflow.com/questions/38697032/how-to-center-an-image-inside-an-uibutton-without-stretching-in-both-direction-i
             button.contentMode = .center
             button.imageView?.contentMode = .scaleAspectFit
         }

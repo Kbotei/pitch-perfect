@@ -32,8 +32,24 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        snailButton.contentMode = .center
+        snailButton.imageView?.contentMode = .scaleAspectFit
+        
+        chipmunkButton.contentMode = .center
+        chipmunkButton.imageView?.contentMode = .scaleAspectFit
+        
+        rabbitButton.contentMode = .center
+        rabbitButton.imageView?.contentMode = .scaleAspectFit
+        
+        vaderButton.contentMode = .center
+        vaderButton.imageView?.contentMode = .scaleAspectFit
+        
+        echoButton.contentMode = .center
+        echoButton.imageView?.contentMode = .scaleAspectFit
+        
+        reverbButton.contentMode = .center
+        reverbButton.imageView?.contentMode = .scaleAspectFit
     }
     
     override func viewWillAppear(_ animated: Bool) {

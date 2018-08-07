@@ -11,6 +11,8 @@ import AVFoundation
 
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
+    // MARK: - Properties
+    
     var audioRecorder: AVAudioRecorder!
     
     @IBOutlet weak var recordButton: UIButton!
@@ -26,6 +28,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewWillAppear(animated)
     }
 
+    // MARK: - Action methods
+    
     @IBAction func recordAudio(_ sender: Any) {
         configureUI(recording: true)
         
